@@ -1,0 +1,147 @@
+.app-navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	box-shadow: 0px 15px 25px -15px rgba(0,0,0,0.35);
+	line-height: 55px;
+	height: 55px;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-o-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: flex;
+	z-index: 100;
+}
+	.app-navbar .top-left-button{
+		display: block;
+		height: 55px;
+		width: 55px;
+		float: left;
+		position: relative;
+		text-align: center;
+		background-color: rgba(255,255,255,.3);
+	}
+	.app-navbar .logo-title{
+		text-decoration: none;
+		font-weight: 400;
+		color: #fff;
+		margin: 0 auto;
+		font-size: 20px;
+		padding-left: 6px;
+	}
+	.app-navbar .top-right-button{
+		display: block;
+		width: 55px;
+		height: 55px;
+		float: right;
+		text-align: center;
+		position: relative;
+		background-color: rgba(255,255,255,.3);
+	}
+		.app-navbar .top-left-button button, .app-navbar .top-right-button button{
+			background-color: transparent;
+			border: none;
+			outline: none;
+			font-size: 20px;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+		}
+
+.app-container{
+	max-width: 552px;
+    width: 552px;
+    margin: 0 auto;
+    padding: 0;
+}
+	.app-container:first-child{
+    	padding-top: 55px;
+	}
+	.app-container .app-best-games .head-content h1, .app-container .app-more-games .head-content h2{
+		font-size: 16px;
+		color: #333;
+		font-weight: 700;
+		margin: 16px 0px 8px 20px;
+	}
+		.app-container .app-best-games .head-content h1 i, .app-container .app-more-games .head-content h2 i{
+			color: red;
+		}
+		.app-container .app-best-games{
+			display: block;
+			position: relative;
+			width: auto;
+			height: auto;
+		}
+		.app-container .app-more-games{
+			margin-top: 20px;
+			display: block;
+			position: relative;
+		}
+			.app-container .app-best-games .body-content, .app-container .app-more-games .body-content{
+				display: flex;
+				position: relative;
+				height: 100%;
+			}
+				.app-container .item-game{
+					width: 25%;
+					display: inline-block;
+					float: left;
+					height: 150px;
+					box-sizing: content-box;
+				}
+					.app-container .item-game .game-box{
+						width: 98px;
+						margin: 10px auto;
+						text-decoration: none;
+						display: block;
+						position: relative;
+					}
+						.app-container .item-game .game-box .img-game{
+							width: 98px;
+							height: 98px;
+							border-radius: 15px;
+							box-shadow: 0 3px 10px 0 rgba(0,0,0,0.14);
+						}
+						.app-container .item-game .game-box .info-game{
+							width: 100%;
+							height: 30px;
+						}
+							.app-container .item-game .game-box .info-game h3{
+								color: #333;
+								display: block;
+								font-weight: 400;
+								display: -webkit-box;
+								max-width: 100%;
+								height: 27px;
+								margin: 0 auto;
+								margin-top: 10px;
+								font-size: 13px;
+								line-height: 1;
+								-webkit-line-clamp: 2;
+								-webkit-box-orient: vertical;
+								overflow: hidden;
+								text-overflow: ellipsis;
+							}
+
+@media screen and (max-width: 560px){
+	.app-container, .app-container>.app-recent-game{
+		max-width: 442px;
+		width: 442px;
+	}
+}
+@media screen and (max-width: 450px){
+	.app-container, .app-container>.app-recent-game{
+		max-width: 332px;
+		width: 332px;
+	}
+}
+@media screen and (max-width: 330px){
+	.app-container, .app-container>.app-recent-game{
+		max-width: 302px;
+		width: 302px;
+	}
+}
